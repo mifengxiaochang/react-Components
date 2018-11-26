@@ -1,0 +1,99 @@
+/* 弹层透明遮罩层样式 */
+.m-mask {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	background-color: rgba(233, 233, 233, .5);
+}
+/*	弹层通用样式	*/
+.m-dialog{
+	position:fixed;
+	left: 50%;
+	top:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width:auto;
+	border:1px solid #0ff;
+	// box-shadow: 5px 5px 5px #ccc;
+	z-index: 99;
+}
+/*	弹层通用头尾样式	*/
+.md-dialog{
+	background-color: #003976;
+	min-width: 370px;
+	.md-dialog-title{
+		margin:0 24px;
+		overflow: hidden;
+		height: 62px;
+		position:relative;
+		// border-bottom: 1px solid #ececec;
+		line-height: 62px;
+		h4{
+			font-size:18px;
+			color:#0ff;
+			float: left;
+		}
+		.iconfont{
+			font-size:20px;
+			float: right;
+			cursor: pointer;
+			color:#0ff;
+      &:hover{
+        color:rgb(0, 195, 255);
+      }
+		}
+	}
+  .md-dialog-content{
+    padding:5px 24px;
+    color:#0ff;
+		max-width: 540px;
+		word-wrap:break-word;
+    word-break: break-all;
+    text-align: center;
+		max-height: 200px;
+		overflow-y: auto;
+	}
+	.md-dialog-foot{
+    padding: 16px 24px;
+    background-color: #003976;
+    overflow: hidden;
+    text-align: right;
+		.btns{
+      width: auto;
+			height: 30px;
+      line-height: 1.499;
+      text-align: center;
+      display: inline-block;
+      font-weight:400;
+			padding:0 12px;
+      user-select:none;
+      white-space:nowrap;
+			font-size:14px;
+			margin-left: 8px;
+      display: inline-block;
+      cursor: pointer;
+      outline: 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      color: #616161;
+      background-color: #fff;
+      transition:all .3s cubic-bezier(.645,.045,.355,1);
+
+      &:hover{
+        color: #40a9ff;
+        border-color: #40a9ff;
+      }
+		}
+    .btns-blue{
+      color: #fff;
+      background-color: #008ed6;
+      padding:0 16px;
+    }
+	}
+}
